@@ -1,0 +1,49 @@
+{% load staticfiles %}
+{% include "navbar.html" %}
+
+{% block content %}
+  <div id="bill-cards-container">
+    <h2>Upcoming Bills
+      <span id="add-bill-button" class="btn btn-primary">Add a Bill
+        <span class="glyphicon glyphicon-plus"></span>
+      </span>
+    </h2>
+
+    <div id="timeline-container">
+        <ul class="timeline">
+            <li>
+              <div class="timeline-badge">
+                <span class="label label-default duedate">September 1st</span>
+                </div>
+              <div class="timeline-panel">
+                <div class="thumbnail">
+                  <h1 id="bill-card-header">Rent</h1>
+                  <div class="caption">
+                    <h1 id="bill-cost-label">$2103-$2200</h1>
+                    <p id="bill-pay-action-buttons">
+                      <a href="#" class="btn btn-primary" role="button">Mark as Paid</a>
+                      <a href="#" class="btn btn-success  " role="button">Pay Bill</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge"><span class="label label-default inverted-duedate">September 1st</span></div>
+              <div class="timeline-panel">
+                <div class="thumbnail">
+                  <h1 id="bill-card-header">Rent</h1>
+                  <div class="caption">
+                    <h1 id="bill-cost-label">$2103-$2200</h1>
+                    <p id="bill-pay-action-buttons">
+                      <a href="#" class="btn btn-primary" role="button">Mark as Paid</a>
+                      <a href="#" class="btn btn-success  " role="button">Pay Bill</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </ul>
+    </div>
+      </div>
+{% endblock %}
